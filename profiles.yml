@@ -1,0 +1,11 @@
+dbt_hol:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: SYSADMIN
+      warehouse: DBT_DEV_HEAVY_WH
+      database: DBT_HOL_DEV
+      schema: PUBLIC
+      account: ' '
+      user: ' '
