@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: tasty_bytes
+    description: "Sample raw data source for the Tasty Bytes POC"
+    database: DBT_POC_DB
+    schema: DBT_POC_SCHEMA
+    tables:
+      - name: raw_orders
+        description: "Mock raw orders for demonstration"

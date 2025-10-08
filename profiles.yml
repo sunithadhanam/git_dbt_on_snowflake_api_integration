@@ -3,9 +3,12 @@ dbt_hol:
   outputs:
     dev:
       type: snowflake
-      role: SYSADMIN
-      warehouse: DBT_DEV_HEAVY_WH
-      database: DBT_HOL_DEV
-      schema: PUBLIC
-      account: ' '
-      user: ' '
+      account: ZBYCHSB-XQ56074
+      user: SUNITHA
+      password: "SRdhanamjayamApril_2022"
+      role: ACCOUNTADMIN
+      warehouse: DBT_POC_WH
+      database: DBT_POC_DB
+      schema: DBT_POC_SCHEMA
+      threads: 4
+      client_session_keep_alive: false

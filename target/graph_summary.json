@@ -1,0 +1,1 @@
+{"_invocation_id": "27066e51-b5a0-4d9e-b0ca-1332d8d25573", "linked": {"0": {"name": "source.dbt_hol.tasty_bytes.raw_orders", "type": "source"}, "1": {"name": "model.dbt_hol.stg_tasty_bytes_orders", "type": "model", "succ": [2]}, "2": {"name": "model.dbt_hol.fct_tasty_bytes_sales_summary", "type": "model"}}}
