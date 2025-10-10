@@ -1,6 +1,3 @@
-{{ config(materialized='view') }}
-
--- mock up some data for the POC
 select
   1 as order_id,
   'burger' as item_name,
