@@ -1,0 +1,6 @@
+models:
+  dbt_fresh_lab:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
