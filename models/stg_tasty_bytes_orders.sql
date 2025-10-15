@@ -15,4 +15,10 @@ select
   'fries' as item_name,
   3.599 as price,
   '2025-10-10'::date as order_date
+    select
+  4 as order_id,
+  'fries' as item_name,
+  3.899 as price,
+  '2025-10-11'::date as order_date
+  
   
