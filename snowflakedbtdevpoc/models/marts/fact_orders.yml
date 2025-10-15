@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: "Aggregated fact table summarizing customer order metrics"
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier"
+        tests:
+          - not_null
+      - name: total_orders
+        description: "Count of distinct orders per customer"
+      - name: total_sales
+        description: "Sum of total order amounts per customer"
+      - name: first_order_date
+        description: "Date of first order"
+      - name: last_order_date
+        description: "Date of most recent order"

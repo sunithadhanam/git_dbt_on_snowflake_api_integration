@@ -1,0 +1,11 @@
+snowflakedbtdevpoc:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: DBT_DEV_WH
+      database: DBT_HOL_DEV
+      schema: PUBLIC
+      account: ' '
+      user: ' '
