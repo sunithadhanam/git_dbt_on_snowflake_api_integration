@@ -1,11 +1,16 @@
-name: "dbt_hol"
-version: "1.0"
+name: dbt_hol_project
+version: 1.0
 config-version: 2
 
-profile: "dbt_hol"
+profile: default
 
 model-paths: ["models"]
 
 models:
-  dbt_hol:
-    +materialized: table
+  dbt_hol_project:
+    staging:
+      +schema: public
+      +materialized: view
+    marts:
+      +schema: public
+      +materialized: table
