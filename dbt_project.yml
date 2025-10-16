@@ -1,16 +1,21 @@
-name: dbt_hol_project
-version: 1.0
+name: 'my_first_dbt_project_on_snowflake'
+version: '1.0'
 config-version: 2
 
-profile: default
+profile: 'my_first_dbt_project_on_snowflake'
 
 model-paths: ["models"]
+seed-paths: ["seeds"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
 
 models:
-  dbt_hol_project:
+  my_first_dbt_project_on_snowflake:
+    +materialized: view
     staging:
-      +schema: public
-      +materialized: view
+      +schema: staging
     marts:
-      +schema: public
-      +materialized: table
+      +schema: marts

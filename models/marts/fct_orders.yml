@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Customer-level order summary derived from stg_orders"
+    tests:
+      - not_null:
+          column_name: customer_id

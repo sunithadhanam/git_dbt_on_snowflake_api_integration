@@ -1,14 +1,14 @@
-dbt_hol:
+my_first_dbt_project_on_snowflake:
   target: dev
   outputs:
     dev:
       type: snowflake
-      account: ZBYCHSB-XQ56074
-      user: SUNITHA
-      password: "SRdhanamjayamApril_2022"
+      account: <your_account>              # e.g. xy12345.ap-southeast-2
+      user: sunithadhanam
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
       role: ACCOUNTADMIN
-      warehouse: DBT_POC_WH
-      database: DBT_POC_DB
-      schema: DBT_POC_SCHEMA
+      warehouse: DBT_DEV_WH
+      database: DBT_HOL_DEV
+      schema: PUBLIC
       threads: 4
-      client_session_keep_alive: false
+      client_session_keep_alive: False

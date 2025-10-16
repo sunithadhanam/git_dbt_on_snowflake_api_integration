@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DBT_HOL_DEV
+    schema: PUBLIC
+    tables:
+      - name: RAW_ORDERS
