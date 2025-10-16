@@ -1,7 +1,7 @@
-name: snowflakedbtdevpoc
+name: dbt_hol
 version: 1.0.0
 config-version: 2
-profile: snowflakedbtdevpoc
+profile: dbt_hol
 model-paths:
   - models
 analysis-paths:
@@ -15,5 +15,5 @@ macro-paths:
 snapshot-paths:
   - snapshots
 models:
-  snowflakedbtdevpoc:
+  dbt_hol:
     +materialized: view

@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: raw
-    schema: raw               # your schema name
-    database: analytics       # your database name
-    tables:
-      - name: raw_orders
-        description: "Raw orders data ingested from source system"
